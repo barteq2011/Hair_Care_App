@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<BorderPane fx:id="mainBorderPane" id="mainDialogPane" styleClass="rounded" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.hairCareApp.ListOfProductsDialogController" stylesheets="@../styles/mainWindowStyle.css"
+            prefHeight="400.0" prefWidth="600.0">
+    <center>
+        <VBox>
+                <MenuBar id="mainMenuBar" fx:id="mainMenuBar">
+                    <Menu id="mainMenu" text="Menu">
+                        <MenuItem styleClass="menuItems" text="Dodaj produkt" onAction="#handleNewMenuItem"/>
+                        <MenuItem styleClass="menuItems" text="Usuń produkt" onAction="#handleDeleteMenuItem"/>
+                        <SeparatorMenuItem/>
+                        <MenuItem styleClass="menuItems" text="Zamknij" onAction="#handleCloseMenuItem"/>
+                    </Menu>
+                </MenuBar>
+                <TableView fx:id="productsTableView" id="productsTableView"/>
+        </VBox>
+    </center>
+</BorderPane>

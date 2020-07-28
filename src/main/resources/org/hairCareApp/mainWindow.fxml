@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane fx:id="mainBorderPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="org.hairCareApp.MainWindowController"
+            prefHeight="400.0" prefWidth="600.0" stylesheets="@styles/mainWindowStyle.css" styleClass="rounded" id="mainBorderPane">
+    <top>
+        <MenuBar id="mainMenuBar" fx:id="menuBar">
+            <Menu id="mainMenu" text="Menu">
+                <MenuItem styleClass="menuItems" text="Twoje produkty" onAction="#handleProductsMenuItem"/>
+                <MenuItem styleClass="menuItems" text="O programie" onAction="#hanleAboutMenuItem"/>
+                <SeparatorMenuItem/>
+                <MenuItem styleClass="menuItems" text="Wyjście" onAction="#handleExitMenuItem"/>
+            </Menu>
+        </MenuBar>
+    </top>
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="10">
+            <padding>
+                <Insets top="10"/>
+            </padding>
+            <HBox alignment="center" spacing="5">
+                <Button fx:id="buttonLeft" onAction="#handleLeftButton"/>
+                <Label styleClass="rounded" id="dateLabel" fx:id="dateLabel" alignment="CENTER"/>
+                <DatePicker prefWidth="10" fx:id="datePicker" onAction="#handleDatePicker"/>
+                <Button fx:id="buttonRight" onAction="#handleRightButton"/>
+            </HBox>
+            <GridPane fx:id="dateProductsGridPane" alignment="center" hgap="10" vgap="10">
+            </GridPane>
+            <Button onAction="#handleAddButton" text="+" prefWidth="200" prefHeight="20" alignment="center"/>
+        </VBox>
+    </center>
+</BorderPane>

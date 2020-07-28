@@ -1,0 +1,43 @@
+#mainBorderPane {
+    -fx-font-weight: bold;
+    -fx-background-color: #d9c8e8;
+    -fx-font-family: "Calibri";
+    -fx-font-style: italic;
+    -fx-font-size: 12px;
+}
+#dateLabel {
+    -fx-pref-width: 100px;
+}
+#mainMenuBar {
+    -fx-background-color: #8a65a8;
+    -fx-background-radius: 18 18 0 0;
+    -fx-border-radius: 18 18 0 0;
+}
+.button {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+.menuItems {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+    -fx-background-color: #d9c8e8;
+}
+#productsTableView {
+    -fx-background-color: #d9c8e8;
+    -fx-font-style: italic;
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+.rounded {
+    -fx-background-radius: 18 18 18 18;
+    -fx-border-radius: 18 18 18 18;
+}
+#mainMenu {
+    -fx-background-radius: 18 18 0 0;
+        -fx-border-radius: 18 18 0 0;
+}
+#errorLabel {
+    -fx-text-fill: red;
+    -fx-font-style: italic;
+    -fx-font-weight: bold;
+}

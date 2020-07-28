@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane id="mainBorderPane" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.hairCareApp.AddNewProductDialogController"
+            prefHeight="200.0" prefWidth="300.0" stylesheets="@../styles/mainWindowStyle.css">
+    <content>
+            <GridPane hgap="10" vgap="10">
+                <Label text="Nazwa produktu:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="nameTextField" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <Label text="Typ produktu:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="typeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Label text="Typ PEH:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="pehTypeComboBox" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Label text="Data zakupu/początku używania:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="purDatePicker" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            </GridPane>
+    </content>
+</DialogPane>
